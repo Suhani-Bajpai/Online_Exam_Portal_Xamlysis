@@ -85,10 +85,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'xamlysis',
-        'USER': 'root',
+        'USER':'root',
         'PASSWORD': 'priyanshi13',
         'HOST': 'localhost',
         'PORT': '3306',
+        #'PASSWORD': os.environ.get('SQL_PASSWORD'),
     }
 }
 

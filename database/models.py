@@ -18,8 +18,8 @@ class sign_up(models.Model):
     id=models.CharField( max_length=50)
     name=models.TextField()
     username=models.CharField(max_length=100)
-    #password=
-    email_id=models.EmailField(primary_key=True)
+    password=models.CharField(max_length=100)
+    email_id=models.EmailField(primary_key=True , blank=False)
     mobile_no=models.IntegerField()
     institute_name=models.TextField()
 
